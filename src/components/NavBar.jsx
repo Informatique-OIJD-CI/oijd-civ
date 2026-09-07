@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Lock, ArrowRight, Megaphone, Menu, X } from "lucide-react";
-import logo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 import { ORGANISATION_LINKS, ACTUALITES_LINKS, SIMPLE_LINKS } from "../constants/data";
 
 export default function Navbar() {
