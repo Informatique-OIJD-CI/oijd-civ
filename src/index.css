@@ -4,6 +4,7 @@
     Charte graphique OIJD - Section CIV (inspiree du logo officiel)
    ========================================================================= */
 @theme {
+  --color-ojid-green: #00860b;   /* ⬅️ manquait, ajouté */
   --color-ojid-green-dark: #24752d;
   --color-ojid-orange: #fc5d01;
   --color-ojid-orange-flame: #fb8204;
@@ -19,6 +20,16 @@
   --ink: #121212;
   --muted: #667085;
   --background: #ffffff;
+
+  /* Alias sans préfixe "color-" pour tes var(--ojid-xxx) dans les styles inline */
+  --ojid-green: var(--color-ojid-green);
+  --ojid-green-dark: var(--color-ojid-green-dark);
+  --ojid-orange: var(--color-ojid-orange);
+  --ojid-orange-flame: var(--color-ojid-orange-flame);
+  --ojid-white: var(--color-ojid-white);
+  --ojid-gray: var(--color-ojid-gray);
+  --ojid-bluegray: var(--color-ojid-bluegray);
+  --digital-purple: var(--color-digital-purple);
 }
 
 @layer base {
@@ -282,6 +293,15 @@
       inset 0 1px 0 rgba(255, 255, 255, 0.5),
       0 4px 12px rgba(18, 18, 18, 0.08);
   }
+
+  .animate-ticker {
+    animation: ticker-scroll 28s linear infinite;
+  }
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 /* Accessibilite : respect de prefers-reduced-motion */

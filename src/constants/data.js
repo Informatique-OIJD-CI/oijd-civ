@@ -1,7 +1,13 @@
 import {
     Info,Network,Building2,Users,Handshake,
     Newspaper,CalendarCheck,Megaphone,GraduationCap,
+    HeartHandshake, FolderKanban, BookOpen,
     Feather,Rocket,
+
+    BarChart3, Globe2,
+    FileText, Flag, TrendingUp, Truck,
+    Landmark,
+
 } from "lucide-react";
 
 export const PILLARS = [
@@ -99,3 +105,168 @@ export const SIMPLE_LINKS = [
     { label: "Accueil", href: "/" },
     { label: "Contact", href: "/contact" },
 ];
+
+export const OPPORTUNITIES = [
+    {
+        icon: HeartHandshake,
+        iconBg: "rgba(0,134,11,0.1)",
+        iconColor: "var(--ojid-green)",
+        category: "Volontariat",
+        postedAgo: "il y a 2 jours",
+        title: "Appel a candidatures : volontaires OIJD 2026",
+        tags: ["Benevolat", "Toute l'annee"],
+        department: "Ressources humaines",
+        location: "Cote d'Ivoire",
+        closingDate: "30 nov.",
+        ctaLabel: "M'engager",
+        href: "/appels/volontaires-2026",
+    },
+    {
+        icon: FolderKanban,
+        iconBg: "rgba(252,93,1,0.1)",
+        iconColor: "var(--ojid-orange)",
+        category: "Appel a projets",
+        postedAgo: "il y a 5 jours",
+        title: "Appel aux projets jeunesse, diplomatie et cooperation",
+        tags: ["Financement", "Remote"],
+        department: "Projets et programmes",
+        location: "Cote d'Ivoire",
+        closingDate: "15 dec.",
+        ctaLabel: "Soumettre un projet",
+        href: "/appels/projets-jeunesse",
+    },
+    {
+        icon: BookOpen,
+        iconBg: "rgba(111,45,189,0.1)",
+        iconColor: "var(--digital-purple)",
+        category: "Programme de formation",
+        postedAgo: "il y a 1 semaine",
+        title: "Programme de formation au leadership diplomatique",
+        tags: ["Intensif", "En ligne"],
+        department: "Formation et renforcement",
+        location: "Cote d'Ivoire",
+        closingDate: "10 jan.",
+        ctaLabel: "S'inscrire",
+        href: "/appels/formation-leadership",
+    },
+
+    {
+        icon: BookOpen,
+        iconBg: "rgba(111,45,189,0.1)",
+        iconColor: "var(--digital-purple)",
+        category: "Programme de formation",
+        postedAgo: "il y a 1 semaine",
+        title: "Programme de formation en Art Oratoir",
+        tags: ["Intensif", "En ligne"],
+        department: "Formation et renforcement",
+        location: "Cote d'Ivoire",
+        closingDate: "18 Sept.",
+        ctaLabel: "S'inscrire",
+        href: "/appels/formation-leadership",
+    },
+];
+
+// Actualités 
+
+import seanceTravail from "../assets/news/seance-travail-bureau.png";
+import anniversaireOijd from "../assets/news/1-an-engagement.png";
+import munAbidjan from "../assets/news/mun-abidjan.png";
+
+export const NEWS = [
+    {
+        image: seanceTravail,
+        category: "Vie institutionnelle",
+        date: "1er aout 2026",
+        title: "Seance de travail du bureau executif et du conseil de regulation",
+        excerpt: "Ce samedi 1er aout 2026, le bureau executif et le conseil de regulation de l'Organisation Internationale de la Jeunesse Diplomatique ont tenu une seance de travail de la plus haute importance.",
+        href: "/actualites/seance-travail-aout-2026",
+    },
+    {
+        image: anniversaireOijd,
+        category: "Anniversaire",
+        date: "24 aout 2026",
+        title: "1 an d'engagement : joyeux anniversaire a l'OIJD CIV",
+        excerpt: "Celebrons 1 an d'engagement au service de la jeunesse diplomatique. Retour sur une annee marquee par la mobilisation et les actions de la Section Cote d'Ivoire.",
+        href: "/actualites/1-an-engagement",
+    },
+    {
+        image: munAbidjan,
+        category: "Evenement",
+        date: "22 aout 2026",
+        title: "Model United Nations (MUN) au Swiss UMEF Campus d'Abidjan",
+        excerpt: "Retour en images sur le Model United Nations (MUN) qui s'est tenu le 22 aout au Swiss UMEF Campus d'Abidjan, reunissant de jeunes diplomates en herbe.",
+        href: "/actualites/mun-abidjan-2026",
+    },
+];
+
+
+export const DEPARTMENTS = [
+    { icon: Megaphone, label: "Communication", href: "/organisation/departements/communication" },
+    { icon: Building2, label: "Administration", href: "/organisation/departements/administration" },
+    { icon: Users, label: "Ressources humaines", href: "/organisation/departements/ressources-humaines" },
+    { icon: BarChart3, label: "Finances", href: "/organisation/departements/finances" },
+    { icon: Globe2, label: "Relations exterieures", href: "/organisation/departements/relations-exterieures" },
+    { icon: FolderKanban, label: "Projets et programmes", href: "/organisation/departements/projets-programmes" },
+    { icon: GraduationCap, label: "Formation et renforcement des capacites", href: "/organisation/departements/formation" },
+    { icon: FileText, label: "Juridique", href: "/organisation/departements/juridique" },
+    { icon: Flag, label: "Protocole", href: "/organisation/departements/protocole" },
+    { icon: TrendingUp, label: "Suivi-evaluation", href: "/organisation/departements/suivi-evaluation" },
+    { icon: Handshake, label: "Partenariat et cooperation", href: "/organisation/departements/partenariat-cooperation" },
+    { icon: Truck, label: "Logistique", href: "/organisation/departements/logistique" },
+    { icon: HeartHandshake, label: "Mobilisation et vie associative", href: "/organisation/departements/mobilisation-vie-associative" },
+    { icon: Landmark, label: "Relations institutionnelles", href: "/organisation/departements/relations-institutionnelles" },
+];
+
+// Parterns
+
+import logoMinistere from "../assets/partners/image.png";
+import logoPnud from "../assets/partners/pnud.png";
+import logoUnionAfricaine from "../assets/partners/pan-African.png";
+import logoOngPad from "../assets/partners/ONG-PAD.png";
+
+export const PARTNERS = [
+    {
+        logo: logoMinistere,
+        name: "Ministere de la Jeunesse",
+        category: "Institution publique",
+        description: "Partenaire institutionnel de reference pour les politiques jeunesse.",
+        href: "https://exemple.gouv.ci",
+    },
+    {
+        logo: logoPnud,
+        name: "PNUD",
+        category: "Organisation internationale",
+        description: "Appui au developpement, a la gouvernance et a la participation citoyenne.",
+        href: "https://www.undp.org",
+    },
+    {
+        logo: logoUnionAfricaine,
+        name: "Union Africaine - Jeunesse",
+        category: "Organisation continentale",
+        description: "Promotion de la participation des jeunes a l'echelle africaine.",
+        href: "https://au.int",
+    },
+    {
+        logo: logoOngPad,
+        name: "ONG Paix & Developpement",
+        category: "Societe civile",
+        description: "Actions de terrain pour la paix, le dialogue et le developpement local.",
+        href: "https://exemple-ong-pad.org",
+    },
+];
+
+export const FOOTER_LINKS = {
+    navigation: [
+        { label: "Accueil", href: "/" },
+        { label: "L'organisation", href: "/organisation/a-propos" },
+        { label: "Departements", href: "/organisation/departements" },
+        { label: "Actualites", href: "/actualites" },
+        { label: "Appels et opportunites", href: "/appels" },
+    ],
+    organisation: [
+        { label: "Le mot du president", href: "/organisation/mot-du-president" },
+        { label: "Nos partenaires", href: "/partenaires" },
+        { label: "Devenir volontaire", href: "/appels/volontaires-2026" },
+        { label: "Nous contacter", href: "/contact" },
+    ],
+};
