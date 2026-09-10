@@ -26,27 +26,18 @@ export default function Hero() {
 
             {/* Contenu */}
             <div className="container-x relative z-10 py-24">
-                <div className="max-w-2xl">
-                    <span
-                        className="eyebrow rounded-full px-3 py-1 text-white"
-                        style={{ background: "rgba(255,255,255,0.12)" }}
-                    >
-                        <span className="w-1.5 h-1.5 rounded-full text-white" style={{ background: "var(--ojid-orange)" }} />
-                        Section Cote d'Ivoire
-                    </span>
-
-                    <h1 className="mt-5 text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.08] text-balance text-white">
+                <div className="text-center m-auto max-w-2xl">
+                    <h1 className="mt-5 text-4xl text-center sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.08] text-balance text-white">
                         Jeunesse,<span className="text-white"> diplomatie et engagement pour un avenir responsable.</span>
-                        
                     </h1>
 
-                    <p className="mt-6 text-lg text-white max-w-xl">
+                    <p className="mt-6 text-lg text-center text-white max-w-xl mx-auto">
                         L'Organisation Internationale de la Jeunesse Diplomatique - Section CIV federe une jeunesse engagee pour la cooperation,
                         le leadership responsable et l'ouverture internationale.
                     </p>
 
-                    <div className="mt-8 flex flex-wrap items-center gap-4">
-                        <a
+                    <div className="mt-8 flex flex-wrap justify-center text-center m-auto items-center gap-4">
+                        <a 
                             href="/appels"
                             className="flex items-center gap-2 rounded-full pl-6 pr-2 py-2.5 text-[15px] font-semibold text-white"
                             style={{ background: "var(--ojid-orange)" }}
@@ -57,7 +48,7 @@ export default function Hero() {
                             </span>
                         </a>
 
-                        <a
+                        <a 
                             href="/organisation/a-propos"
                             className="flex items-center gap-2 rounded-full px-6 py-2.5 text-[15px] font-semibold text-white border border-white/40 hover:bg-white/10 transition-colors"
                         >
@@ -67,7 +58,7 @@ export default function Hero() {
                     </div>
 
                     {/* Stats */}
-                    <div className="mt-12 flex flex-wrap items-center gap-4 sm:gap-6">
+                    <div className="mt-12 flex flex-wrap justify-center items-center gap-4 sm:gap-6">
                         {STATS.map(({ icon: Icon, value, label }) => (
                             <div
                                 key={label}
