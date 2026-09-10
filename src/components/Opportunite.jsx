@@ -22,7 +22,7 @@ export default function Opportunities() {
 
                     <a 
                         href="/appels"
-                        className="shrink-0 inline-flex items-center gap-2 rounded-full pl-6 pr-2 py-2.5 text-[15px] font-semibold text-white"
+                        className="shrink-0 inline-flex items-center gap-2 rounded-full pl-6 pr-2 py-2.5 text-[15px] font-semibold text-white transition-colors"
                         style={{ background: "var(--ojid-orange)" }}
                     >
                         Voir tous les appels
@@ -51,7 +51,7 @@ export default function Opportunities() {
                                 <button
                                     type="button"
                                     aria-label="Enregistrer"
-                                    className="flex items-center justify-center w-7 h-7 rounded-md border"
+                                    className="flex items-center justify-center w-7 h-7 rounded-md border transition-colors hover:bg-[var(--color-ojid-gray)]"
                                     style={{ borderColor: "var(--color-ojid-gray)", color: "var(--muted)" }}
                                 >
                                     <Bookmark size={14} strokeWidth={2} />
@@ -94,7 +94,7 @@ export default function Opportunities() {
 
                                 <a 
                                     href={href}
-                                    className="inline-flex items-center rounded-full px-4 py-2 text-[13px] font-semibold text-white"
+                                    className="inline-flex items-center rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--ojid-orange-flame)]"
                                     style={{ background: "var(--ink)" }}
                                 >
                                     {ctaLabel}

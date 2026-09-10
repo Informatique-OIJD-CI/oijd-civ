@@ -7,6 +7,8 @@ import flagsImage from "../assets/departement/flags-night.png";
 import { DEPARTMENTS } from "../constants/data";
 
 export default function Departments() {
+    const featuredDepartments = DEPARTMENTS.slice(0, 6);
+
     return (
         <section data-navbar-theme="dark" className="relative overflow-hidden">
             {/* Image de fond */}
@@ -48,8 +50,8 @@ export default function Departments() {
                         </p>
                     </div>
 
-                    <a
-                        href="/organisation/departements"
+                    <a 
+                        href="/departements"
                         className="glass-btn shrink-0 inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-[15px] font-semibold text-white transition-colors"
                     >
                         Explorer les departements
@@ -57,9 +59,9 @@ export default function Departments() {
                     </a>
                 </div>
 
-                {/* Grille des departements */}
-                <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                    {DEPARTMENTS.map(({ icon: Icon, label, href }) => (
+                {/* Grille des departements (apercu) */}
+                <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {featuredDepartments.map(({ icon: Icon, label, href }) => (
                         <a 
                             key={label}
                             href={href}

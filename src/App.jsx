@@ -1,4 +1,5 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/NavBar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -9,19 +10,29 @@ import News from './components/News'
 import Departments from './components/Departments'
 import Partners from './components/Partners'
 import Footer from './components/Footer'
+import DepartementsPage from './components/Pages/DepartementsPages'
+
+const HomePage = () => (
+  <>
+    <Hero />
+    <About />
+    <PresidentsWord />
+    <StatsBand />
+    <Opportunities />
+    <News />
+    <Departments />
+    <Partners />
+  </>
+)
 
 export const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <About />
-      <PresidentsWord />
-      <StatsBand />
-      <Opportunities />
-      <News />
-      <Departments />
-      <Partners />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/departements" element={<DepartementsPage />} />
+      </Routes>
       <Footer />
     </div>
   )
