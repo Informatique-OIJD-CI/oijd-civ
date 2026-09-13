@@ -1,5 +1,5 @@
 import { Quote } from "lucide-react";
-import presidentPhoto from "../assets/President.jpeg";
+import presidentPhoto from "/bureau/President.jpeg";
 
 export default function PresidentsWord() {
     return (

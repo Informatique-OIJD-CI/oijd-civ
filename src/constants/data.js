@@ -64,13 +64,13 @@ export const ORGANISATION_LINKS = [
         icon: Network,
         title: "Notre organisation",
         description: "Organigramme et gouvernance",
-        href: "/organisation/organigramme",
+        href: "/organigramme",
     },
     {
         icon: Building2,
         title: "Departements",
         description: "Nos departements et commissions",
-        href: "/organisation/departements",
+        href: "/departements",
     },
     {
         icon: Users,
@@ -171,8 +171,16 @@ export const OPPORTUNITIES = [
 import seanceTravail from "../assets/news/seance-travail-bureau.png";
 import anniversaireOijd from "../assets/news/1-an-engagement.png";
 import munAbidjan from "../assets/news/mun-abidjan.png";
+import fabriqueDiplomatique from "../assets/news/image.png"
 
 export const NEWS = [
+    {
+        image: fabriqueDiplomatique,
+        category:"Vie institutionnelle",
+        date:"09-10 septembre 2026",
+        title:" l'OIJD à la FABRIQUE DE LA DIPLOMATIE 🇫🇷 Paris 2026",
+        excerpt: "L’Organisation Internationale de la Jeunesse Diplomatique Section Côte-d’Ivoire, a été représentée à la Fabrique de la Diplomatie, événement diplomatique organisé par le Ministère de l’Europe et des Affaires Étrangères de la République Française. Sur deux jours, Monsieur Abdoul-Amid Gnelbin, Président International de l’OIJD a eu l’occasion de s’entretenir avec ses homologues présidents d’organisations de jeunesses vouées à la diplomatie, des diplomates, jeunes passionnés de diplomatie ainsi que le corps diplomatique ivoirien présent sur place"
+    },
     {
         image: seanceTravail,
         category: "Vie institutionnelle",
@@ -270,3 +278,47 @@ export const FOOTER_LINKS = {
         { label: "Nous contacter", href: "/contact" },
     ],
 };
+
+export const PRESIDENT = {
+    name: "ABDOUL-AMID GNELBIN",
+    role: "President",
+    description: "President de l'OIJD - Section CIV",
+    photo: "/bureau/President.jpeg",
+};
+
+export const VICE_PRESIDENTS = [
+    {
+        name: "ABOLOU FREDY",
+        role: "1er Vice-President",
+        description: "Charge de l'Administration et de la coordination Generale",
+        photo: "/bureau/abolou-fredy.jpeg",
+    },
+    {
+        name: "N'GUESSAN AFFRA",
+        role: "2e Vice-Presidente",
+        description: "Chargee du Leadership Feminin et de l'Egalite des chances",
+        photo: "/bureau/nguessan-affra.jpeg",
+    },
+    {
+        name: "DIOMANDE EDEN",
+        role: "3e Vice-Presidente",
+        description: "Chargee de l'inclusion, de la Vie Associative et du Bien-etre des Membres",
+        photo: "/bureau/logo.png"
+    },
+    {
+        name: "TOURE NOURA",
+        role: "4e Vice-Presidente",
+        description: "Chargee de la Diaspora et de l'Engagement Benevole",
+        photo: "/bureau/toure-noura.jpeg",
+    },
+];
+
+export const DIRECTEURS = [
+    { name: "KONE SIDICK", role: "Directeur", description: "Directeur Financier" },
+    { name: "BAILLY ANDREA", role: "Directrice", description: "Directrice Projets et Innovation Diplomatique" },
+    { name: "WOMBLEGNON BRYAN", role: "Directeur", description: "Directeur Protocole" },
+    { name: "PEHI MONDEZIR", role: "Directeur", description: "Directeur RI et Expansion" },
+    { name: "YAO JASON", role: "Directeur", description: "Directeur Communication & Informatique" },
+    { name: "TOURE SAMIRA", role: "Directrice", description: "Directrice Partenariats" },
+    { name: "KOUASSI MARIE", role: "Directrice", description: "Directrice Ressources Humaines" },
+];

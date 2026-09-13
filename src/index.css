@@ -191,6 +191,88 @@
     color: var(--color-ojid-green);
     text-decoration: underline;
   }
+
+  /* Organigramme — arbre hierarchique avec connecteurs */
+  .org-chart,
+  .org-chart ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .org-chart,
+  .org-chart ul,
+  .org-chart li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .org-chart li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 0 20px;
+  }
+
+  .org-chart li::before,
+  .org-chart li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50%;
+    height: 40px;
+    border-top: 2px solid var(--color-ojid-gray);
+  }
+
+  .org-chart li::after {
+    right: auto;
+    left: 50%;
+    border-left: 2px solid var(--color-ojid-gray);
+  }
+
+  .org-chart li:only-child::before,
+  .org-chart li:only-child::after {
+    display: none;
+  }
+
+  .org-chart li:only-child {
+    padding-top: 0;
+  }
+
+  .org-chart li:first-child::before,
+  .org-chart li:last-child::after {
+    border: 0 none;
+  }
+
+  .org-chart li:last-child::before {
+    border-right: 2px solid var(--color-ojid-gray);
+    border-radius: 0 6px 0 0;
+  }
+
+  .org-chart li:first-child::after {
+    border-radius: 6px 0 0 0;
+  }
+
+  .org-chart ul ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 40px;
+    border-left: 2px solid var(--color-ojid-gray);
+  }
+
+  .org-chart > ul > li {
+    padding-top: 0;
+  }
+
+  .org-chart > ul > li::before,
+  .org-chart > ul > li::after {
+    display: none;
+  }
 }
 
 @layer utilities {

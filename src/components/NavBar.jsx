@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/Logo.png";
+import logo from "/bureau/Logo.png";
 import NavLinks from "./navbar/NavLinks";
 import NavActions from "./navbar/NavAction";
 import OrganisationDropdown from "./navbar/OrganisationDropdown";
